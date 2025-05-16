@@ -20,13 +20,13 @@ console.log(somme);
 
 // Exo 3
 
-// let nombre = prompt("Entrez un nombre :")
+let nombre = prompt("Entrez un nombre :")
 
-// if (nombre > 10) {
-//     console.log(`${nombre} est supérieur à 10.`);
-// } else {
-//     console.log(`${nombre} est plus petit ou égal à 10.`);
-// }
+if (nombre > 10) {
+    console.log(`${nombre} est supérieur à 10.`);
+} else {
+    console.log(`${nombre} est plus petit ou égal à 10.`);
+}
 
 // Exo 4
 
@@ -50,5 +50,63 @@ if (ageUtilisateur < 18) {
     console.log(`Tu es senior.`);
 }
 
-// Exo 6
+Exo 6
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// Exo 7
+
+let nombreUtilisateur = prompt("Entrez un chiffre de votre choix :")
+
+for (let i = 1; i <= 10; i++) {
+    console.log(nombreUtilisateur * i);
+}
+
+// Exo 8
+
+const chiffreInitial = 1
+let chiffreBoucle = chiffreInitial + 1
+
+for (i = 1; i <= 100 ; i++) {
+    console.log(chiffreBoucle * i);
+}
+
+// Exo 9
+
+let chiffreDevine = prompt("Devine un chiffre entre 1 et 10 :")
+
+function chiffreAleatoire(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let chiffreCorrect = chiffreAleatoire(1, 10);
+
+if (chiffreDevine == chiffreCorrect) {
+    console.log(`C'était bien le ${chiffreCorrect}, c'est gagné !`);
+} else {
+    console.log(`Eh non, c'était le ${chiffreCorrect}, essaie encore !`);
+}
+
+// Exo 10
+
+    for (let i = 0; i <= 50; i++) {
+        if (i % 2 === 0) {
+        console.log(i);
+        }
+    }
+
+    // Exo 11
+
+for (let i = 10; i>= 0; i--) {
+    console.log(i);
+    if (i === 0) {
+        console.log("C'est terminé !");
+    }
+}
+
+// Exo 12
 
