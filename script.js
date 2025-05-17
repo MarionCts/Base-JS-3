@@ -110,3 +110,21 @@ for (let i = 10; i>= 0; i--) {
 
 // Exo 12
 
+let premierNombre = prompt("Donne-moi un premier nombre :")
+let secondNombre = prompt("Donne-moi un deuxième nombre :")
+let choixOperation = prompt("Choisis entre effectuer une addition, une soustraction, une multiplication ou une division :")
+
+const operations = {
+    addition: (premierNombre, secondNombre) => premierNombre + secondNombre,
+    soustraction: (premierNombre, secondNombre) => premierNombre - secondNombre,
+    multiplication: (premierNombre, secondNombre) => premierNombre * secondNombre,
+    division: (premierNombre, secondNombre) => premierNombre / secondNombre,
+};
+
+if (operations[choixOperation]) {
+    console.log(`Le résultat de l'opération demandée est ${operations[choixOperation] (premierNombre, secondNombre)}`);
+} else {
+    console.log(`Je n'ai pas compris ta demande, reformule-la.`);
+    
+}
+
