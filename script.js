@@ -128,3 +128,24 @@ if (operations[choixOperation]) {
     
 }
 
+// Exo 13
+
+const nombres = [12, 45, 3, 22, 34, 90];
+
+console.log(`Le plus grand nombre est ${Math.max(...nombres)}`);
+
+// Exo 13 bonus
+
+function plusieursNbAleatoires(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const nombresAleatoires = [];
+
+for (let i = 1 ; i <= 50 ; i++) {
+    nombresAleatoires.push(plusieursNbAleatoires(1, 500));
+}
+
+console.log(nombresAleatoires);
+
+console.log(`Le plus grand nombre est ${Math.max(...nombresAleatoires)}`);
